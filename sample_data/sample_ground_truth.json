@@ -1,0 +1,132 @@
+{
+  "sample_sonar_01.png": [
+    {
+      "class": "Shipwreck",
+      "bbox": [
+        300,
+        109,
+        260,
+        122
+      ]
+    },
+    {
+      "class": "Ghost Net",
+      "bbox": [
+        930,
+        203,
+        153,
+        97
+      ]
+    },
+    {
+      "class": "Pipe",
+      "bbox": [
+        275,
+        549,
+        311,
+        63
+      ]
+    },
+    {
+      "class": "Cylinder",
+      "bbox": [
+        1108,
+        532,
+        84,
+        56
+      ]
+    },
+    {
+      "class": "Metal Debris",
+      "bbox": [
+        1209,
+        93,
+        30,
+        32
+      ]
+    },
+    {
+      "class": "Fishing Gear",
+      "bbox": [
+        807,
+        649,
+        104,
+        81
+      ]
+    },
+    {
+      "class": "Unknown Anomaly",
+      "bbox": [
+        234,
+        387,
+        25,
+        22
+      ]
+    }
+  ],
+  "sample_sonar_02.png": [
+    {
+      "class": "Shipwreck",
+      "bbox": [
+        928,
+        459,
+        224,
+        122
+      ]
+    },
+    {
+      "class": "Ghost Net",
+      "bbox": [
+        209,
+        107,
+        182,
+        96
+      ]
+    },
+    {
+      "class": "Ghost Net",
+      "bbox": [
+        424,
+        618,
+        113,
+        79
+      ]
+    },
+    {
+      "class": "Pipe",
+      "bbox": [
+        910,
+        155,
+        341,
+        71
+      ]
+    },
+    {
+      "class": "Cylinder",
+      "bbox": [
+        272,
+        393,
+        76,
+        54
+      ]
+    },
+    {
+      "class": "Metal Debris",
+      "bbox": [
+        812,
+        302,
+        24,
+        31
+      ]
+    },
+    {
+      "class": "Fishing Gear",
+      "bbox": [
+        1145,
+        694,
+        102,
+        68
+      ]
+    }
+  ]
+}

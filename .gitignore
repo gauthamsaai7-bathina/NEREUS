@@ -1,0 +1,13 @@
+node_modules/
+dist/
+venv/
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.env
+backend/outputs/*
+!backend/outputs/.gitkeep
+backend/models/*.pt
+backend/models/*.onnx
+*.log

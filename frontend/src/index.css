@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { color-scheme: dark; }
+html, body, #root { height: 100%; }
+body { @apply bg-abyss text-mist font-sans antialiased; font-feature-settings: 'tnum' 1; }
+::selection { background: rgba(55, 213, 214, 0.3); }
+* { scrollbar-width: thin; scrollbar-color: #1f3550 transparent; }
+:focus-visible { outline: 2px solid #37d5d6; outline-offset: 2px; }
+
+@layer components {
+  .panel { @apply bg-trench border border-line rounded-md; }
+  .panel-title { @apply text-[13px] font-semibold text-mist tracking-wide; }
+  .label { @apply text-[11px] text-haze tracking-wide; }
+  .btn { @apply inline-flex items-center justify-center gap-2 h-9 px-3.5 rounded text-[13px] font-medium border border-line bg-shelf text-mist transition-colors hover:border-sonar/50 hover:bg-[#12263b] disabled:opacity-40 disabled:pointer-events-none; }
+  .btn-primary { @apply bg-sonar text-abyss border-sonar hover:bg-[#5be3e3] hover:border-[#5be3e3] font-semibold; }
+  .btn-ghost { @apply border-transparent bg-transparent hover:bg-shelf; }
+  .input { @apply h-9 w-full rounded border border-line bg-shelf px-3 text-[13px] text-mist placeholder:text-haze/60 focus:border-sonar/60 focus:outline-none; }
+  .chip { @apply inline-flex items-center gap-1.5 h-6 px-2 rounded-sm text-[11px] font-medium border; }
+  th.th { @apply text-left text-[11px] font-medium text-haze px-3 py-2 border-b border-line whitespace-nowrap; }
+  td.td { @apply px-3 py-2 text-[13px] border-b border-line/60 whitespace-nowrap; }
+}
+
+@keyframes ping-ring { 0% { transform: scale(0.15); opacity: 0.55; } 100% { transform: scale(1); opacity: 0; } }
+@keyframes sweep { to { transform: rotate(360deg); } }
+@keyframes shimmer { 0% { background-position: -400px 0; } 100% { background-position: 400px 0; } }
+.skeleton { background: linear-gradient(90deg, #0f1e30 25%, #16304a 37%, #0f1e30 63%); background-size: 800px 100%; animation: shimmer 1.4s infinite linear; border-radius: 4px; }
+@media (prefers-reduced-motion: reduce) { *, ::before, ::after { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; } }
+
+/* Leaflet dark theme + offline-friendly background */
+.leaflet-container { background: #07111d; font-family: inherit; }
+.leaflet-popup-content-wrapper, .leaflet-popup-tip { background: #0a1522; color: #d8e6f2; border: 1px solid #1a2c40; border-radius: 6px; }
+.leaflet-container a.leaflet-popup-close-button { color: #7f97ad; }
+.leaflet-control-zoom a { background: #0a1522 !important; color: #d8e6f2 !important; border-color: #1a2c40 !important; }
+.leaflet-tile-pane { filter: brightness(0.75) saturate(0.7) hue-rotate(185deg) invert(0.92) contrast(0.9); }
+.grid-bg { background-image: linear-gradient(#0f2033 1px, transparent 1px), linear-gradient(90deg, #0f2033 1px, transparent 1px); background-size: 48px 48px; }
+
+/* Printable report */
+@media print {
+  body { background: #fff !important; color: #000 !important; }
+  .no-print { display: none !important; }
+  .print-area { position: static !important; color: #000 !important; }
+  .print-area .panel { background: #fff !important; border-color: #bbb !important; color: #000 !important; }
+  .print-area .label, .print-area .text-haze { color: #444 !important; }
+  .print-area * { color: #000 !important; }
+}
+
+@media print {
+  html, body, #root, #root > div, #root main { height: auto !important; overflow: visible !important; display: block !important; }
+}

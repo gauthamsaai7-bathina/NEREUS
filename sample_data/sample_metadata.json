@@ -1,0 +1,29 @@
+{
+  "_notice": "SYNTHETIC DEMO DATA. Coordinates are illustrative and are NOT from a real sonar survey.",
+  "sample_sonar_01.png": {
+    "description": "Synthetic demo scan 1: seafloor texture, rocks, sand ripples and man-made objects",
+    "latitude": 13.06,
+    "longitude": 80.33,
+    "timestamp": "2026-09-21T06:10:00Z",
+    "heading": 45.0,
+    "depth": 28.5,
+    "ping_number": 10250,
+    "vehicle_id": "AUV-DEMO-01",
+    "survey_id": "SYN-DEMO-2026-A",
+    "pixel_size_m": 0.1,
+    "data_source": "demo"
+  },
+  "sample_sonar_02.png": {
+    "description": "Synthetic demo scan 2: seafloor texture, rocks, sand ripples and man-made objects",
+    "latitude": 13.064,
+    "longitude": 80.333,
+    "timestamp": "2026-09-22T06:20:00Z",
+    "heading": 105.0,
+    "depth": 34.5,
+    "ping_number": 20500,
+    "vehicle_id": "AUV-DEMO-01",
+    "survey_id": "SYN-DEMO-2026-B",
+    "pixel_size_m": 0.1,
+    "data_source": "demo"
+  }
+}
